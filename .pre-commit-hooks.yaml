@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://json.schemastore.org/pre-commit-hooks.json
+- id: dotnet-format
+  name: Format dotnet files
+  description: Run the "dotnet format" command on the entire repository.
+  entry: dotnet format
+  language: system
+  types:
+    - c#
+  pass_filenames: false
+- id: dotnet-format-files
+  name: Format dotnet files
+  description: Run the "dotnet format" command on specific files in the repository.
+  entry: dotnet format --include
+  language: system
+  types:
+    - c#
+- id: dotnet-lint
+  name: Lint dotnet files
+  description: Run the "dotnet format" command on the entire repository, verifying there would be no changes made.
+  entry: dotnet format --verify-no-changes
+  language: system
+  types:
+    - c#
+  pass_filenames: false
+- id: dotnet-lint-files
+  name: Lint dotnet files
+  description: Run the "dotnet format" command on specific files in the repository, verifying there would be no changes made.
+  entry: dotnet format --verify-no-changes --include
+  language: system
+  types:
+    - c#
