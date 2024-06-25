@@ -29,6 +29,7 @@
   types:
     - ts
     - javascript
+  pass_filenames: false
 - id: pnpm-test
   name: Run pnpm test
   description: Run the pnpm test script.
