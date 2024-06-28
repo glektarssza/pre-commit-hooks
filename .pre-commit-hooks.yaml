@@ -6,6 +6,7 @@
   language: system
   types:
     - c#
+  pass_filenames: false
 - id: dotnet-lint
   name: Lint dotnet files
   description: Run the "dotnet format" command, verifying there would be no changes made.
@@ -13,6 +14,7 @@
   language: system
   types:
     - c#
+  pass_filenames: false
 - id: pnpm-lint
   name: Run pnpm lint
   description: Run the pnpm lint script.
