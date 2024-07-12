@@ -20,7 +20,7 @@
   description: Run the pnpm lint script.
   entry: pnpm run lint
   language: system
-  types:
+  types_or:
     - ts
     - javascript
 - id: pnpm-lint-recurse
@@ -28,7 +28,7 @@
   description: Run the pnpm lint script recursively.
   entry: pnpm -r run lint
   language: system
-  types:
+  types_or:
     - ts
     - javascript
   pass_filenames: false
@@ -37,10 +37,16 @@
   description: Run the pnpm test script.
   entry: pnpm run test
   language: system
+  types_or:
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-test-recurse
   name: Run pnpm test (recurse)
   description: Run the pnpm test script recursively.
   entry: pnpm -r run test
   language: system
+  types_or:
+    - ts
+    - javascript
   pass_filenames: false
