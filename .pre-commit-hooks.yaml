@@ -50,3 +50,12 @@
     - ts
     - javascript
   pass_filenames: false
+- id: odin-lint-makefile
+  name: Lint Odin (Makefile)
+  description: Lint an Odin project using a Makefile.
+  entry: make lint
+  language: system
+  types:
+    - file
+  files: \.(odin)$
+  pass_filenames: false
