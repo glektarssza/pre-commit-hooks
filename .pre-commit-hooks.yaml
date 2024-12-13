@@ -59,3 +59,17 @@
     - file
   files: \.(odin)$
   pass_filenames: false
+- id: deno-lint
+  name: Lint Deno
+  description: Lint a Deno project.
+  entry: deno lint
+  language: system
+  types:
+    - ts
+- id: deno-lint-fix
+  name: Lint Deno (Fix)
+  description: Lint a Deno project and fix any issues found.
+  entry: deno lint --fix
+  language: system
+  types:
+    - ts
