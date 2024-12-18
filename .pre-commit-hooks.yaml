@@ -23,10 +23,27 @@
   types_or:
     - ts
     - javascript
+- id: pnpm-lint-ci
+  name: Run pnpm lint:ci
+  description: Run the pnpm lint:ci script.
+  entry: pnpm run lint:ci
+  language: system
+  types_or:
+    - ts
+    - javascript
 - id: pnpm-lint-recurse
   name: Run pnpm lint (recurse)
   description: Run the pnpm lint script recursively.
   entry: pnpm -r run lint
+  language: system
+  types_or:
+    - ts
+    - javascript
+  pass_filenames: false
+- id: pnpm-lint-ci-recurse
+  name: Run pnpm lint:ci (recurse)
+  description: Run the pnpm lint:ci script recursively.
+  entry: pnpm -r run lint:ci
   language: system
   types_or:
     - ts
@@ -41,10 +58,28 @@
     - ts
     - javascript
   pass_filenames: false
+- id: pnpm-test-ci
+  name: Run pnpm test:ci
+  description: Run the pnpm test:ci script.
+  entry: pnpm run test:ci
+  language: system
+  types_or:
+    - ts
+    - javascript
+  pass_filenames: false
 - id: pnpm-test-recurse
   name: Run pnpm test (recurse)
   description: Run the pnpm test script recursively.
   entry: pnpm -r run test
+  language: system
+  types_or:
+    - ts
+    - javascript
+  pass_filenames: false
+- id: pnpm-test-ci-recurse
+  name: Run pnpm test:ci (recurse)
+  description: Run the pnpm test:ci script recursively.
+  entry: pnpm -r run test:ci
   language: system
   types_or:
     - ts
