@@ -108,3 +108,40 @@
   language: system
   types:
     - ts
+- id: clang-format-cpp
+  name: clang-format (C/C++)
+  description: Run clang-format on C/C++ files.
+  entry: clang-format
+  language: system
+  types:
+    - c
+    - c++
+- id: clang-format-objc
+  name: clang-format (Objective-C)
+  description: Run clang-format on Objective-C files.
+  entry: clang-format
+  language: system
+  types:
+    - objective-c
+    - objective-c++
+- id: clang-format-java
+  name: clang-format (Java)
+  description: Run clang-format on Java files.
+  entry: clang-format
+  language: system
+  types:
+    - java
+- id: clang-format-javascript
+  name: clang-format (JavaScript)
+  description: Run clang-format on JavaScript files.
+  entry: clang-format
+  language: system
+  types:
+    - javascript
+- id: clang-format-csharp
+  name: clang-format (C#)
+  description: Run clang-format on C# files.
+  entry: clang-format
+  language: system
+  types:
+    - c#
