@@ -145,6 +145,43 @@
   language: system
   types:
     - c#
+- id: clang-format-cpp-strict
+  name: clang-format (C/C++) (Strict)
+  description: Run clang-format on C/C++ files and treat all warnings as errors.
+  entry: clang-format --dry-run --Werror
+  language: system
+  types:
+    - c
+    - c++
+- id: clang-format-objc-strict
+  name: clang-format (Objective-C) (Strict)
+  description: Run clang-format on Objective-C files  and treat all warnings as errors.
+  entry: clang-format --dry-run --Werror
+  language: system
+  types:
+    - objective-c
+    - objective-c++
+- id: clang-format-java-strict
+  name: clang-format (Java) (Strict)
+  description: Run clang-format on Java files  and treat all warnings as errors.
+  entry: clang-format --dry-run --Werror
+  language: system
+  types:
+    - java
+- id: clang-format-javascript-strict
+  name: clang-format (JavaScript) (Strict)
+  description: Run clang-format on JavaScript files  and treat all warnings as errors.
+  entry: clang-format --dry-run --Werror
+  language: system
+  types:
+    - javascript
+- id: clang-format-csharp-strict
+  name: clang-format (C#) (Strict)
+  description: Run clang-format on C# files  and treat all warnings as errors.
+  entry: clang-format --dry-run --Werror
+  language: system
+  types:
+    - c#
 - id: clang-format-cpp-fix
   name: clang-format (C/C++) (Fix)
   description: Run clang-format on C/C++ files and fix any issues found.
