@@ -161,21 +161,21 @@
   types:
     - objective-c
     - objective-c++
-- id: clang-format-java
+- id: clang-format-java-fix
   name: clang-format (Java) (Fix)
   description: Run clang-format on Java files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
     - java
-- id: clang-format-javascript
+- id: clang-format-javascript-fix
   name: clang-format (JavaScript) (Fix)
   description: Run clang-format on JavaScript files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
     - javascript
-- id: clang-format-csharp
+- id: clang-format-csharp-fix
   name: clang-format (C#) (Fix)
   description: Run clang-format on C# files and fix any issues found.
   entry: clang-format -i
