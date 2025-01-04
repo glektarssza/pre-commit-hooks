@@ -145,3 +145,40 @@
   language: system
   types:
     - c#
+- id: clang-format-cpp-fix
+  name: clang-format (C/C++) (Fix)
+  description: Run clang-format on C/C++ files and fix any issues found.
+  entry: clang-format -i
+  language: system
+  types:
+    - c
+    - c++
+- id: clang-format-objc-fix
+  name: clang-format (Objective-C) (Fix)
+  description: Run clang-format on Objective-C files and fix any issues found.
+  entry: clang-format -i
+  language: system
+  types:
+    - objective-c
+    - objective-c++
+- id: clang-format-java
+  name: clang-format (Java) (Fix)
+  description: Run clang-format on Java files and fix any issues found.
+  entry: clang-format -i
+  language: system
+  types:
+    - java
+- id: clang-format-javascript
+  name: clang-format (JavaScript) (Fix)
+  description: Run clang-format on JavaScript files and fix any issues found.
+  entry: clang-format -i
+  language: system
+  types:
+    - javascript
+- id: clang-format-csharp
+  name: clang-format (C#) (Fix)
+  description: Run clang-format on C# files and fix any issues found.
+  entry: clang-format -i
+  language: system
+  types:
+    - c#
