@@ -5,7 +5,7 @@
   entry: dotnet format
   language: system
   types:
-      - c#
+    - c#
   pass_filenames: false
 - id: dotnet-lint
   name: Lint dotnet files
@@ -13,7 +13,7 @@
   entry: dotnet format --verify-no-changes
   language: system
   types:
-      - c#
+    - c#
   pass_filenames: false
 - id: pnpm-lint
   name: Run pnpm lint
@@ -21,24 +21,24 @@
   entry: pnpm run lint
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
 - id: pnpm-lint-ci
   name: Run pnpm lint:ci
   description: Run the pnpm lint:ci script.
   entry: pnpm run lint:ci
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
 - id: pnpm-lint-recurse
   name: Run pnpm lint (recurse)
   description: Run the pnpm lint script recursively.
   entry: pnpm -r run lint
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-lint-ci-recurse
   name: Run pnpm lint:ci (recurse)
@@ -46,8 +46,8 @@
   entry: pnpm -r run lint:ci
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-test
   name: Run pnpm test
@@ -55,8 +55,8 @@
   entry: pnpm run test
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-test-ci
   name: Run pnpm test:ci
@@ -64,8 +64,8 @@
   entry: pnpm run test:ci
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-test-recurse
   name: Run pnpm test (recurse)
@@ -73,8 +73,8 @@
   entry: pnpm -r run test
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: pnpm-test-ci-recurse
   name: Run pnpm test:ci (recurse)
@@ -82,8 +82,8 @@
   entry: pnpm -r run test:ci
   language: system
   types_or:
-      - ts
-      - javascript
+    - ts
+    - javascript
   pass_filenames: false
 - id: odin-lint-makefile
   name: Lint Odin (Makefile)
@@ -91,7 +91,7 @@
   entry: make lint
   language: system
   types:
-      - file
+    - file
   files: \.(odin)$
   pass_filenames: false
 - id: deno-lint
@@ -100,132 +100,132 @@
   entry: deno lint
   language: system
   types:
-      - ts
+    - ts
 - id: deno-lint-fix
   name: Lint Deno (Fix)
   description: Lint a Deno project and fix any issues found.
   entry: deno lint --fix
   language: system
   types:
-      - ts
+    - ts
 - id: clang-format-cpp
   name: clang-format (C/C++)
   description: Run clang-format on C/C++ files.
   entry: clang-format --dry-run
   language: system
   types:
-      - c
-      - c++
+    - c
+    - c++
 - id: clang-format-objc
   name: clang-format (Objective-C)
   description: Run clang-format on Objective-C files.
   entry: clang-format --dry-run
   language: system
   types:
-      - objective-c
-      - objective-c++
+    - objective-c
+    - objective-c++
 - id: clang-format-java
   name: clang-format (Java)
   description: Run clang-format on Java files.
   entry: clang-format --dry-run
   language: system
   types:
-      - java
+    - java
 - id: clang-format-javascript
   name: clang-format (JavaScript)
   description: Run clang-format on JavaScript files.
   entry: clang-format --dry-run
   language: system
   types:
-      - javascript
+    - javascript
 - id: clang-format-csharp
   name: clang-format (C#)
   description: Run clang-format on C# files.
   entry: clang-format --dry-run
   language: system
   types:
-      - c#
+    - c#
 - id: clang-format-cpp-strict
   name: clang-format (C/C++) (Strict)
   description: Run clang-format on C/C++ files and treat all warnings as errors.
   entry: clang-format --dry-run --Werror
   language: system
   types:
-      - c
-      - c++
+    - c
+    - c++
 - id: clang-format-objc-strict
   name: clang-format (Objective-C) (Strict)
   description: Run clang-format on Objective-C files  and treat all warnings as errors.
   entry: clang-format --dry-run --Werror
   language: system
   types:
-      - objective-c
-      - objective-c++
+    - objective-c
+    - objective-c++
 - id: clang-format-java-strict
   name: clang-format (Java) (Strict)
   description: Run clang-format on Java files  and treat all warnings as errors.
   entry: clang-format --dry-run --Werror
   language: system
   types:
-      - java
+    - java
 - id: clang-format-javascript-strict
   name: clang-format (JavaScript) (Strict)
   description: Run clang-format on JavaScript files  and treat all warnings as errors.
   entry: clang-format --dry-run --Werror
   language: system
   types:
-      - javascript
+    - javascript
 - id: clang-format-csharp-strict
   name: clang-format (C#) (Strict)
   description: Run clang-format on C# files  and treat all warnings as errors.
   entry: clang-format --dry-run --Werror
   language: system
   types:
-      - c#
+    - c#
 - id: clang-format-cpp-fix
   name: clang-format (C/C++) (Fix)
   description: Run clang-format on C/C++ files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
-      - c
-      - c++
+    - c
+    - c++
 - id: clang-format-objc-fix
   name: clang-format (Objective-C) (Fix)
   description: Run clang-format on Objective-C files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
-      - objective-c
-      - objective-c++
+    - objective-c
+    - objective-c++
 - id: clang-format-java-fix
   name: clang-format (Java) (Fix)
   description: Run clang-format on Java files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
-      - java
+    - java
 - id: clang-format-javascript-fix
   name: clang-format (JavaScript) (Fix)
   description: Run clang-format on JavaScript files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
-      - javascript
+    - javascript
 - id: clang-format-csharp-fix
   name: clang-format (C#) (Fix)
   description: Run clang-format on C# files and fix any issues found.
   entry: clang-format -i
   language: system
   types:
-      - c#
+    - c#
 - id: gradle-spotless
   name: Gradle (Spotless)
   description: Run Spotless via Gradle on Java files.
   entry: gradle spotlessJavaCheck
   language: system
   types:
-      - java
+    - java
   pass_filenames: false
 - id: gradle-spotless-fix
   name: Gradle (Spotless) (Fix)
@@ -233,21 +233,21 @@
   entry: gradle spotlessJavaApply
   language: system
   types:
-      - java
+    - java
   pass_filenames: false
 - id: gradlew-spotless
   name: Gradle (Spotless)
   description: Run Spotless via Gradle on Java files.
-  entry: bash -c '[[ -z "$(uname -a | grep -i wsl)" ]] && ./gradlew spotlessJavaCheck || cmd.exe /Q /C .\gradlew.bat spotlessJavaCheck'
+  entry: bash -c '[[ -z "$(uname -a | grep -i wsl)" ]] && ./gradlew spotlessJavaCheck || cmd.exe /Q /C ./gradlew.bat spotlessJavaCheck'
   language: system
   types:
-      - java
+    - java
   pass_filenames: false
 - id: gradlew-spotless-fix
   name: Gradle (Spotless) (Fix)
   description: Run Spotless via Gradle on Java files and fix any issues found.
-  entry: bash -c '[[ -z "$(uname -a | grep -i wsl)" ]] && ./gradlew spotlessJavaApply || cmd.exe /Q /C .\gradlew.bat spotlessJavaApply'
+  entry: bash -c '[[ -z "$(uname -a | grep -i wsl)" ]] && ./gradlew spotlessJavaApply || cmd.exe /Q /C ./gradlew.bat spotlessJavaApply'
   language: system
   types:
-      - java
+    - java
   pass_filenames: false
