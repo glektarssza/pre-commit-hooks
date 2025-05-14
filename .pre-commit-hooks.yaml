@@ -234,4 +234,20 @@
   language: system
   types:
     - java
+  pass_filenames: false 
+- id: gradlew-spotless
+  name: Gradle (Spotless)
+  description: Run Spotless via Gradle on Java files.
+  entry: gradlew spotlessJavaCheck
+  language: system
+  types:
+    - java
+  pass_filenames: false
+- id: gradlew-spotless-fix
+  name: Gradle (Spotless) (Fix)
+  description: Run Spotless via Gradle on Java files and fix any issues found.
+  entry: gradlew spotlessJavaApply
+  language: system
+  types:
+    - java
   pass_filenames: false
