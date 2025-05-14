@@ -219,3 +219,19 @@
   language: system
   types:
     - c#
+- id: gradle-spotless
+  name: Gradle (Spotless)
+  description: Run Spotless via Gradle on Java files.
+  entry: gradle spotlessJavaCheck
+  language: system
+  types:
+    - java
+  pass_filenames: false
+- id: gradle-spotless-fix
+  name: Gradle (Spotless) (Fix)
+  description: Run Spotless via Gradle on Java files and fix any issues found.
+  entry: gradle spotlessJavaApply
+  language: system
+  types:
+    - java
+  pass_filenames: false
