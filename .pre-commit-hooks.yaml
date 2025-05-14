@@ -246,7 +246,7 @@
 - id: gradlew-spotless-fix
   name: Gradle (Spotless) (Fix)
   description: Run Spotless via Gradle on Java files and fix any issues found.
-  entry: bash -c '[[ -z "$(uname -a | grep -i wsl)" ]] && ./gradlew spotlessJavaApply || cmd.exe /Q /C .\\gradlew.bat spotlessJavaApply'
+  entry: bash -c "[[ -z \"$(uname -a | grep -i wsl)\" ]] && ./gradlew spotlessJavaApply || cmd.exe /Q /C .\\gradlew.bat spotlessJavaApply"
   language: system
   types:
     - java
