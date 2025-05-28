@@ -94,6 +94,13 @@
     - file
   files: \.(odin)$
   pass_filenames: false
+- id: deno-test
+  name: Test Deno
+  description: Test a Deno project.
+  entry: deno test
+  language: system
+  types:
+    - ts
 - id: deno-lint
   name: Lint Deno
   description: Lint a Deno project.
