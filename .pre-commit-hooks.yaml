@@ -325,13 +325,13 @@
 - id: gradle-spotless-wrapper-fix
   name: Gradle Wrapper (Spotless) (Fix)
   description: Run Spotless via the Gradle wrapper and fix any issues found.
-  entry: gradlew spotlessApply
+  entry: ./gradlew spotlessApply
   language: system
   pass_filenames: false
 - id: gradle-wrapper-spotless-java
   name: Gradle Wrapper (Spotless) (Java)
   description: Run Spotless via the Gradle wrapper on Java files.
-  entry: gradlew spotlessJavaCheck
+  entry: ./gradlew spotlessJavaCheck
   language: system
   types:
     - java
@@ -339,7 +339,7 @@
 - id: gradle-wrapper-spotless-java-fix
   name: Gradle Wrapper (Spotless) (Java) (Fix)
   description: Run Spotless via the Gradle wrapper on Java files and fix any issues found.
-  entry: gradlew spotlessJavaApply
+  entry: ./gradlew spotlessJavaApply
   language: system
   types:
     - java
@@ -347,21 +347,21 @@
 - id: gradle-wrapper-spotless-gradle
   name: Gradle Wrapper (Spotless) (Gradle)
   description: Run Spotless via the Gradle wrapper on Gradle files.
-  entry: gradlew spotlessGradleCheck
+  entry: ./gradlew spotlessGradleCheck
   language: system
   files: .*\.gradle
   pass_filenames: false
 - id: gradle-wrapper-spotless-gradle-fix
   name: Gradle Wrapper (Spotless) (Gradle) (Fix)
   description: Run Spotless via the Gradle wrapper on Gradle files and fix any issues found.
-  entry: gradlew spotlessGradleApply
+  entry: ./gradlew spotlessGradleApply
   language: system
   files: .*\.gradle
   pass_filenames: false
 - id: gradle-wrapper-spotless-gradle
   name: Gradle Wrapper (Spotless) (Gradle)
   description: Run Spotless via the Gradle wrapper on Groovy files.
-  entry: gradlew spotlessGroovyCheck
+  entry: ./gradlew spotlessGroovyCheck
   language: system
   types:
     - groovy
@@ -369,7 +369,7 @@
 - id: gradle-wrapper-spotless-groovy-fix
   name: Gradle Wrapper (Spotless) (Groovy) (Fix)
   description: Run Spotless via the Gradle wrapper on Groovy files and fix any issues found.
-  entry: gradlew spotlessGroovyApply
+  entry: ./gradlew spotlessGroovyApply
   language: system
   types:
     - groovy
@@ -377,7 +377,7 @@
 - id: gradle-wrapper-spotless-scala
   name: Gradle Wrapper (Spotless) (Scala)
   description: Run Spotless via the Gradle wrapper on Scala files.
-  entry: gradlew spotlessScalaCheck
+  entry: ./gradlew spotlessScalaCheck
   language: system
   types:
     - scala
@@ -385,7 +385,7 @@
 - id: gradle-wrapper-spotless-scala-fix
   name: Gradle Wrapper (Spotless) (Scala) (Fix)
   description: Run Spotless via the Gradle wrapper on Scala files and fix any issues found.
-  entry: gradlew spotlessScalaApply
+  entry: ./gradlew spotlessScalaApply
   language: system
   types:
     - scala
@@ -393,7 +393,7 @@
 - id: gradle-wrapper-spotless-kotlin
   name: Gradle Wrapper (Spotless) (Kotlin)
   description: Run Spotless via the Gradle wrapper on Kotlin files.
-  entry: gradlew spotlessKotlinCheck
+  entry: ./gradlew spotlessKotlinCheck
   language: system
   types:
     - kotlin
@@ -401,7 +401,7 @@
 - id: gradle-wrapper-spotless-kotlin-fix
   name: Gradle Wrapper (Spotless) (Kotlin) (Fix)
   description: Run Spotless via the Gradle wrapper on Kotlin files and fix any issues found.
-  entry: gradlew spotlessKotlinApply
+  entry: ./gradlew spotlessKotlinApply
   language: system
   types:
     - kotlin
