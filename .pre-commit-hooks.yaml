@@ -228,14 +228,104 @@
     - c#
 - id: gradle-spotless
   name: Gradle (Spotless)
-  description: Run Spotless via Gradle on Java files.
+  description: Run Spotless via Gradle.
   entry: gradle spotlessCheck
   language: system
   pass_filenames: false
 - id: gradle-spotless-fix
   name: Gradle (Spotless) (Fix)
-  description: Run Spotless via Gradle on Java files and fix any issues found.
+  description: Run Spotless via Gradle and fix any issues found.
   entry: gradle spotlessApply
+  language: system
+  pass_filenames: false
+- id: gradle-spotless-java
+  name: Gradle (Spotless) (Java)
+  description: Run Spotless via Gradle on Java files.
+  entry: gradle spotlessJavaCheck
+  language: system
+  types:
+    - java
+  pass_filenames: false
+- id: gradle-spotless-java-fix
+  name: Gradle (Spotless) (Java) (Fix)
+  description: Run Spotless via Gradle on Java files and fix any issues found.
+  entry: gradle spotlessJavaApply
+  language: system
+  types:
+    - java
+  pass_filenames: false
+- id: gradle-spotless-gradle
+  name: Gradle (Spotless) (Gradle)
+  description: Run Spotless via Gradle on Gradle files.
+  entry: gradle spotlessGradleCheck
+  language: system
+  files: .*\.gradle
+  pass_filenames: false
+- id: gradle-spotless-gradle-fix
+  name: Gradle (Spotless) (Gradle) (Fix)
+  description: Run Spotless via Gradle on Gradle files and fix any issues found.
+  entry: gradle spotlessGradleApply
+  language: system
+  files: .*\.gradle
+  pass_filenames: false
+- id: gradle-spotless-gradle
+  name: Gradle (Spotless) (Gradle)
+  description: Run Spotless via Gradle on Groovy files.
+  entry: gradle spotlessGroovyCheck
+  language: system
+  types:
+    - groovy
+  pass_filenames: false
+- id: gradle-spotless-groovy-fix
+  name: Gradle (Spotless) (Groovy) (Fix)
+  description: Run Spotless via Gradle on Groovy files and fix any issues found.
+  entry: gradle spotlessGroovyApply
+  language: system
+  types:
+    - groovy
+  pass_filenames: false
+- id: gradle-spotless-scala
+  name: Gradle (Spotless) (Scala)
+  description: Run Spotless via Gradle on Scala files.
+  entry: gradle spotlessScalaCheck
+  language: system
+  types:
+    - scala
+  pass_filenames: false
+- id: gradle-spotless-scala-fix
+  name: Gradle (Spotless) (Scala) (Fix)
+  description: Run Spotless via Gradle on Scala files and fix any issues found.
+  entry: gradle spotlessScalaApply
+  language: system
+  types:
+    - scala
+  pass_filenames: false
+- id: gradle-spotless-kotlin
+  name: Gradle (Spotless) (Kotlin)
+  description: Run Spotless via Gradle on Kotlin files.
+  entry: gradle spotlessKotlinCheck
+  language: system
+  types:
+    - kotlin
+  pass_filenames: false
+- id: gradle-spotless-kotlin-fix
+  name: Gradle (Spotless) (Kotlin) (Fix)
+  description: Run Spotless via Gradle on Kotlin files and fix any issues found.
+  entry: gradle spotlessKotlinApply
+  language: system
+  types:
+    - kotlin
+  pass_filenames: false
+- id: gradle-spotless-wrapper
+  name: Gradle Wrapper (Spotless)
+  description: Run Spotless via the Gradle wrapper.
+  entry: gradle spotlessCheck
+  language: system
+  pass_filenames: false
+- id: gradle-spotless-wrapper-fix
+  name: Gradle Wrapper (Spotless) (Fix)
+  description: Run Spotless via the Gradle wrapper and fix any issues found.
+  entry: gradlew spotlessApply
   language: system
   pass_filenames: false
 - id: gradle-wrapper-spotless-java
