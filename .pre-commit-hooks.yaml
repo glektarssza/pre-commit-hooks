@@ -316,13 +316,13 @@
   types:
     - kotlin
   pass_filenames: false
-- id: gradle-spotless-wrapper
+- id: gradle-wrapper-spotless
   name: Gradle Wrapper (Spotless)
   description: Run Spotless via the Gradle wrapper.
-  entry: gradle spotlessCheck
+  entry: ./gradlew spotlessCheck
   language: system
   pass_filenames: false
-- id: gradle-spotless-wrapper-fix
+- id: gradle-wrapper-spotless-fix
   name: Gradle Wrapper (Spotless) (Fix)
   description: Run Spotless via the Gradle wrapper and fix any issues found.
   entry: ./gradlew spotlessApply
