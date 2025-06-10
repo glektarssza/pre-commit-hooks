@@ -115,6 +115,84 @@
   language: system
   types:
     - ts
+- id: deno-task-test
+  name: Deno Run Task (Test)
+  description: Run the "test" task on a Deno project.
+  entry: deno task
+  args:
+    - test
+  language: system
+  types:
+    - ts
+  pass_filenames: false
+- id: deno-task-test-coverage
+  name: Deno Run Task (Test with Coverage)
+  description: Run the "test:coverage" task on a Deno project.
+  entry: deno task
+  args:
+    - test:coverage
+  language: system
+  types:
+    - ts
+  pass_filenames: false
+- id: deno-task-recursive-test
+  name: Deno Run Task Recursively (Test)
+  description: Run the "test" task recusively on a Deno workspace.
+  entry: deno task --recusive
+  args:
+    - test
+  language: system
+  types:
+    - ts
+  pass_filenames: false
+- id: deno-task-recursive-test-coverage
+  name: Deno Run Task Recursively (Test with Coverage)
+  description: Run the "test:coverage" task recusively on a Deno workspace.
+  entry: deno task --recusive
+  args:
+    - test:coverage
+  language: system
+  types:
+    - ts
+  pass_filenames: false
+- id: deno-task-lint
+  name: Deno Run Task (Lint)
+  description: Run the "lint" task on a Deno project.
+  entry: deno task
+  args:
+    - lint
+  language: system
+  types:
+    - ts
+- id: deno-task-lint-fix
+  name: Deno Run Task (Lint and Fix)
+  description: Run the "lint:fix" task on a Deno project and fix linting issues found.
+  entry: deno task
+  args:
+    - lint:fix
+  language: system
+  types:
+    - ts
+- id: deno-task-recursive-lint
+  name: Deno Run Task Recursively (Lint)
+  description: Run the "lint" task recusively on a Deno workspace.
+  entry: deno task --recusive
+  args:
+    - lint
+  language: system
+  types:
+    - ts
+  pass_filenames: false
+- id: deno-task-recursive-lint-fix
+  name: Deno Run Task Recursively (Lint and Fix)
+  description: Run the "lint:fix" task recusively on a Deno workspace and fix linting issues found.
+  entry: deno task --recusive
+  args:
+    - lint:fix
+  language: system
+  types:
+    - ts
+  pass_filenames: false
 - id: clang-format-cpp
   name: clang-format (C/C++)
   description: Run clang-format on C/C++ files.
