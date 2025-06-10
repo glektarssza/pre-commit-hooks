@@ -137,8 +137,8 @@
   pass_filenames: false
 - id: deno-task-recursive-test
   name: Deno Run Task Recursively (Test)
-  description: Run the "test" task recusively on a Deno workspace.
-  entry: deno task --recusive
+  description: Run the "test" task recursively on a Deno workspace.
+  entry: deno task --recursive
   args:
     - test
   language: system
@@ -147,8 +147,8 @@
   pass_filenames: false
 - id: deno-task-recursive-test-coverage
   name: Deno Run Task Recursively (Test with Coverage)
-  description: Run the "test:coverage" task recusively on a Deno workspace.
-  entry: deno task --recusive
+  description: Run the "test:coverage" task recursively on a Deno workspace.
+  entry: deno task --recursive
   args:
     - test:coverage
   language: system
@@ -175,8 +175,8 @@
     - ts
 - id: deno-task-recursive-lint
   name: Deno Run Task Recursively (Lint)
-  description: Run the "lint" task recusively on a Deno workspace.
-  entry: deno task --recusive
+  description: Run the "lint" task recursively on a Deno workspace.
+  entry: deno task --recursive
   args:
     - lint
   language: system
@@ -185,8 +185,8 @@
   pass_filenames: false
 - id: deno-task-recursive-lint-fix
   name: Deno Run Task Recursively (Lint and Fix)
-  description: Run the "lint:fix" task recusively on a Deno workspace and fix linting issues found.
-  entry: deno task --recusive
+  description: Run the "lint:fix" task recursively on a Deno workspace and fix linting issues found.
+  entry: deno task --recursive
   args:
     - lint:fix
   language: system
