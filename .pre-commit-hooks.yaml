@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/pre-commit-hooks.json
-- id: dotnet-lint-fix
-  name: Lint dotnet (Fix)
+- id: dotnet-format
+  name: Format dotnet files
   description: Run the "dotnet format" command, fixing any issues.
   entry: dotnet format
   language: system
@@ -8,7 +8,7 @@
     - c#
   pass_filenames: false
 - id: dotnet-lint
-  name: Lint dotnet
+  name: Lint dotnet files
   description: Run the "dotnet format" command, verifying there would be no changes made.
   entry: dotnet format --verify-no-changes
   language: system
