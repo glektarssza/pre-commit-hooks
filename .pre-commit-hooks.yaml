@@ -14,6 +14,29 @@
   language: system
   types:
     - c#
+- id: dotnet-test
+  name: Test dotnet
+  description: Run the "dotnet test" command.
+  entry: dotnet test
+  language: system
+  types:
+    - c#
+  pass_filenames: false
+- id: dotnet-test-coverage
+  name: Test dotnet (Code Coverage)
+  description: Run the "dotnet test" command, with code coverage output.
+  entry: dotnet test --collect "Code Coverage"
+  language: system
+  types:
+    - c#
+  pass_filenames: false
+- id: dotnet-test-coverage-xplat
+  name: Test dotnet (XPlat Code Coverage)
+  description: Run the "dotnet test" command, with cross-platform code coverage output.
+  entry: dotnet test --collect "XPlat Code Coverage"
+  language: system
+  types:
+    - c#
   pass_filenames: false
 - id: pnpm-lint
   name: Run pnpm lint
