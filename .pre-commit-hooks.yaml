@@ -14,6 +14,7 @@
   language: system
   types:
     - c#
+  pass_filenames: false
 - id: dotnet-test
   name: Test dotnet
   description: Run the "dotnet test" command.
