@@ -39,6 +39,40 @@
   types:
     - c#
   pass_filenames: false
+- id: npm-lint
+  name: Run npm lint
+  description: Run the npm lint script.
+  entry: npm run lint
+  language: system
+  types_or:
+    - ts
+    - javascript
+- id: npm-lint-ci
+  name: Run npm lint:ci
+  description: Run the npm lint:ci script.
+  entry: npm run lint:ci
+  language: system
+  types_or:
+    - ts
+    - javascript
+- id: npm-test
+  name: Run npm test
+  description: Run the npm test script.
+  entry: npm run test
+  language: system
+  types_or:
+    - ts
+    - javascript
+  pass_filenames: false
+- id: npm-test-ci
+  name: Run npm test:ci
+  description: Run the npm test:ci script.
+  entry: pnpm run test:ci
+  language: system
+  types_or:
+    - ts
+    - javascript
+  pass_filenames: false
 - id: pnpm-lint
   name: Run pnpm lint
   description: Run the pnpm lint script.
